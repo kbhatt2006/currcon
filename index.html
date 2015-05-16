@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Converter</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="tab.js"></script>
+	<script type="text/javascript" src="converter.js"></script>>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">Temperature</a></li>
+        <li><a href="#tab2">Currency</a></li>
+        <li><a href="#tab3">Unit</a></li>
+    </ul>
+ 
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <p>Temperature Conversion</p>
+            <form name="converter">
+            	<table border="0">
+            	<tr>
+				<td>Celsius:</td><td> <input type="text" name="celsius" onChange="CelsiusConverter()"><br />
+				</td></tr>
+				<tr>
+				<td>Fahrenheit:</td><td> <input type="text" name="fahrenheit" onChange="FahrenheitConverter()"><br />
+				</td></tr>
+				<tr>
+				<td>Kelvin:</td><td> <input type="text" name="kelvin" onChange="KelvinConverter()"><br />
+				</td></tr>
+				<td colspan="2" align="center"><input id="submit" type="button" value="Convert!" />
+				</td>
+
+				</table>
+			</form>
+        </div>
+ 
+        <div id="tab2" class="tab">
+            <p>Currency Conversion!</p>
+	            <form name="con">
+					<table border="0">
+					<tr>
+					<td>Euro: </td><td><input type="text" name="euro" onChange="euroConverter()" /></td>
+					</tr>
+					<tr>
+					<td>US Dollar: </td><td><input type="text" name="dollar" onChange="dollarConverter()" /></td>
+					</tr>
+					<td colspan="2" align="center"><input id="submit" type="button" value="Convert!" /></td>
+					</table>
+				</form>
+		</div>
+    	
+    	<div id="tab3" class="tab">
+            <p>Simple Unit Conversion</p>
+	            <form name="conv">	
+
+
+	            <table border="0">
+	            	<tr>
+					<td>Cm:</td><td> <input type="text" name="cm" onChange="cmConverter()"><br />
+					</td></tr>
+					<tr>
+					<td>Inch:</td><td> <input type="text" name="inch" onChange="inchConverter()"><br />
+					</td></tr>
+					<tr>
+					<td>Feet:</td><td> <input type="text" name="feet" onChange="feetConverter()"><br />
+					</td></tr>
+					<td colspan="2" align="center"> <input id="submit" type="button" value="Convert!" />
+					</td>
+					</table>
+				</form>
+   		 </div>
+	</div>
+</body>
+</html>
